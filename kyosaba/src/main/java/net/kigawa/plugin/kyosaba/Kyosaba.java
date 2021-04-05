@@ -24,5 +24,6 @@ public final class Kyosaba extends JavaPlugin {
         // Plugin shutdown logic
     }
     public void test(){
+        int a=1;
     }
 }
