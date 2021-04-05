@@ -1,0 +1,5 @@
+name: Kyosaba
+version: ${project.version}
+main: net.kigawa.plugin.kyosaba.Kyosaba
+api-version: 1.16
+authors: [ kigawa ]
