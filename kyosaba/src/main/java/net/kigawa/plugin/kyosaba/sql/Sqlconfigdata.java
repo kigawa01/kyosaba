@@ -9,13 +9,15 @@ public class Sqlconfigdata implements Data {
     String database;
     String user;
     String password;
+    String option;
     public Sqlconfigdata(){
         name="sql";
         host="localhost";
         port=3306;
         database="databasename";
         user="username";
-        password="password";
+        password="'password'";
+        option="&ssl=false";
     }
     @Override
     public void data() {
@@ -34,4 +36,6 @@ public class Sqlconfigdata implements Data {
     public void setUser(String string){user=string;}
     public String getPassword(){return password;}
     public void setPassword(String string){password=string;}
+    public String getOption(){return option;}
+    public void setOption(String sting){option=sting;}
 }

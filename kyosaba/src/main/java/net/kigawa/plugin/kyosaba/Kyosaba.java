@@ -16,7 +16,6 @@ public final class Kyosaba extends JavaPlugin {
         pluginManager.registerEvents(new listner(this),this);
         pluginManager.registerEvents(new portallistner(this),this);
         new Kyosabaconfig(this);
-        new Sqlconfig(this);
     }
 
     @Override
@@ -24,6 +23,5 @@ public final class Kyosaba extends JavaPlugin {
         // Plugin shutdown logic
     }
     public void test(){
-        int a=1;
     }
 }
