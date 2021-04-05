@@ -1,0 +1,36 @@
+Index: kyosaba/src/main/java/net/kigawa/plugin/kyosaba/Kyosaba.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package net.kigawa.plugin.kyosaba;\n\nimport net.kigawa.plugin.kyosaba.main.chiar.listner;\nimport net.kigawa.plugin.kyosaba.config.Kyosabaconfig;\nimport net.kigawa.plugin.kyosaba.main.portal.portallistner;\nimport net.kigawa.plugin.kyosaba.sql.Sqlconfig;\nimport org.bukkit.plugin.PluginManager;\nimport org.bukkit.plugin.java.JavaPlugin;\n\npublic final class Kyosaba extends JavaPlugin {\n\n    @Override\n    public void onEnable() {\n        // Plugin startup logic\n        PluginManager pluginManager=getServer().getPluginManager();\n        pluginManager.registerEvents(new listner(this),this);\n        pluginManager.registerEvents(new portallistner(this),this);\n        new Kyosabaconfig(this);\n        new Sqlconfig(this);\n    }\n\n    @Override\n    public void onDisable() {\n        // Plugin shutdown logic\n    }\n    public void test(){\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/Kyosaba.java b/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/Kyosaba.java
+--- a/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/Kyosaba.java	(revision 76a4accafbc5f882ec0b933467c8d23d86dc404a)
++++ b/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/Kyosaba.java	(date 1617615722741)
+@@ -24,5 +24,6 @@
+         // Plugin shutdown logic
+     }
+     public void test(){
++        int a=1;
+     }
+ }
+Index: kyosaba/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n    <modelVersion>4.0.0</modelVersion>\n\n    <groupId>net.kigawa.plugin</groupId>\n    <artifactId>kyosaba</artifactId>\n    <version>1.1</version>\n    <packaging>jar</packaging>\n\n    <name>Kyosaba</name>\n\n    <properties>\n        <java.version>1.8</java.version>\n        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\n    </properties>\n\n    <build>\n        <plugins>\n            <plugin>\n                <groupId>org.apache.maven.plugins</groupId>\n                <artifactId>maven-compiler-plugin</artifactId>\n                <version>3.8.1</version>\n                <configuration>\n                    <source>${java.version}</source>\n                    <target>${java.version}</target>\n                </configuration>\n            </plugin>\n            <plugin>\n                <groupId>org.apache.maven.plugins</groupId>\n                <artifactId>maven-shade-plugin</artifactId>\n                <version>3.2.4</version>\n                <executions>\n                    <execution>\n                        <phase>package</phase>\n                        <goals>\n                            <goal>shade</goal>\n                        </goals>\n                        <configuration>\n                            <createDependencyReducedPom>false</createDependencyReducedPom>\n                        </configuration>\n                    </execution>\n                </executions>\n            </plugin>\n        </plugins>\n        <resources>\n            <resource>\n                <directory>src/main/resources</directory>\n                <filtering>true</filtering>\n            </resource>\n        </resources>\n    </build>\n\n    <repositories>\n        <repository>\n            <id>spigotmc-repo</id>\n            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>\n        </repository>\n        <repository>\n            <id>sonatype</id>\n            <url>https://oss.sonatype.org/content/groups/public/</url>\n        </repository>\n    </repositories>\n\n    <dependencies>\n        <dependency>\n            <groupId>org.spigotmc</groupId>\n            <artifactId>spigot-api</artifactId>\n            <version>1.16.5-R0.1-SNAPSHOT</version>\n            <scope>provided</scope>\n        </dependency>\n        <dependency>\n            <groupId>mysql</groupId>\n            <artifactId>mysql-connector-mxj</artifactId>\n            <version>5.0.12</version>\n        </dependency>\n        <dependency>\n            <groupId>org.yaml</groupId>\n            <artifactId>snakeyaml</artifactId>\n            <version>1.27</version>\n        </dependency>\n        <dependency>\n            <groupId>org.spigotmc</groupId>\n            <artifactId>spigot</artifactId>\n            <version>1.15.2-R0.1-SNAPSHOT</version>\n        </dependency>\n    </dependencies>\n</project>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/kyosaba/pom.xml b/kyosaba/pom.xml
+--- a/kyosaba/pom.xml	(revision 76a4accafbc5f882ec0b933467c8d23d86dc404a)
++++ b/kyosaba/pom.xml	(date 1617613423967)
+@@ -83,7 +83,7 @@
+         <dependency>
+             <groupId>org.spigotmc</groupId>
+             <artifactId>spigot</artifactId>
+-            <version>1.15.2-R0.1-SNAPSHOT</version>
++            <version>1.16.5-R0.1-SNAPSHOT</version>
+         </dependency>
+     </dependencies>
+ </project>
