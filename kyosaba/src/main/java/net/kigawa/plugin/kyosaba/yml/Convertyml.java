@@ -9,6 +9,6 @@ public class Convertyml {
     }
     public String Tostring(Data data){
         Yaml yaml=new Yaml();
-        return yaml.dump(data);
+        return yaml.dumpAsMap(data);
     }
 }

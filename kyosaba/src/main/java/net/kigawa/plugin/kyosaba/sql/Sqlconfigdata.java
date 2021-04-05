@@ -1,7 +1,5 @@
 package net.kigawa.plugin.kyosaba.sql;
 
-import com.mysql.management.util.Str;
-import net.kigawa.plugin.kyosaba.Kyosaba;
 import net.kigawa.plugin.kyosaba.config.Data;
 
 public class Sqlconfigdata implements Data {

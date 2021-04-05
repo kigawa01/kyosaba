@@ -27,10 +27,7 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.guava:guava:21.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.code.gson:gson:2.8.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: net.md-5:bungeecord-chat:1.16-R0.4" level="project" />
-    <orderEntry type="library" name="Maven: mysql:mysql-connector-mxj:5.0.12" level="project" />
-    <orderEntry type="library" name="Maven: mysql:mysql-connector-mxj-db-files:5.0.12" level="project" />
-    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.17" level="project" />
-    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.27" level="project" />
-    <orderEntry type="library" name="Maven: org.spigotmc:spigot:1.15.2-R0.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.yaml:snakeyaml:1.27" level="project" />
+    <orderEntry type="library" name="Maven: org.spigotmc:spigot:1.16.5-R0.1-SNAPSHOT" level="project" />
   </component>
 </module>
