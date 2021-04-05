@@ -4,7 +4,6 @@ import net.kigawa.plugin.kyosaba.Kyosaba;
 import net.kigawa.plugin.kyosaba.config.Kyosabaconfig;
 
 import java.sql.Connection;
-import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 

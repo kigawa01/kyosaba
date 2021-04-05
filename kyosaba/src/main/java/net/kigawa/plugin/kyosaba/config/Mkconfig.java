@@ -5,7 +5,6 @@ import net.kigawa.plugin.kyosaba.yml.Convertyml;
 
 import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
 
 public class Mkconfig {
     String stringconfig;

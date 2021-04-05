@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5d0f34b-5394-4b60-93b5-79c84b4a1fe2" name="Default Changelist" comment="sql config and connect method">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/Kyosaba.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/Kyosaba.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/config/Kyosabaconfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/config/Kyosabaconfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/config/mkconfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/config/Mkconfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/Sqlconfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/Sqlconfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/Sqlconfigdata.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/Sqlconfigdata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/config/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/config/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/config/Mkconfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/config/Mkconfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/conect.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/conect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617620622119</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="sql config and connect method">
+      <created>1617632926222</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617632926222</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
