@@ -2,7 +2,7 @@ package net.kigawa.plugin.kyosaba.sql;
 
 import net.kigawa.plugin.kyosaba.config.Data;
 
-public class Sqlconfigdata implements Data {
+public class SqlConfigData implements Data {
     String name;
     String host;
     int port;
@@ -10,7 +10,7 @@ public class Sqlconfigdata implements Data {
     String user;
     String password;
     String option;
-    public Sqlconfigdata(){
+    public SqlConfigData(){
         name="sql";
         host="localhost";
         port=3306;

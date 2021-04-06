@@ -9,7 +9,7 @@ import java.io.File;
 import java.io.FileReader;
 
 public class SqlConfig {
-    Sqlconfigdata sqlconfigdata;
+    SqlConfigData sqlconfigdata;
     Kyosaba plugin;
     public SqlConfig(Kyosaba kyosaba){
         plugin=kyosaba;
@@ -18,7 +18,7 @@ public class SqlConfig {
         String path=filepath+ "/config.yml";
         File file = new File(filepath);
         if(!file.exists()){
-            Sqlconfigdata sqlConfigData1=new Sqlconfigdata();
+            SqlConfigData sqlConfigData1=new SqlConfigData();
             MkConfig mkconfig=new MkConfig(plugin,sqlConfigData1);
             mkconfig.writeconfig(file,path);
         }
@@ -41,7 +41,7 @@ public class SqlConfig {
         Yaml yaml=new Yaml();
         sqlconfigdata=yaml.load(strConfig);
     }
-    public Sqlconfigdata getSqlconfigdata(){
+    public SqlConfigData getSqlconfigdata(){
         return sqlconfigdata;
     }
 }

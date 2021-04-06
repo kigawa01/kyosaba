@@ -7,11 +7,11 @@ import org.bukkit.event.player.PlayerMoveEvent;
 
 public class portalListener implements Listener{
     private final Kyosaba plugin;
-    public portalListener(Kyosaba plg){
-        plugin=plg;
+    public portalListener(Kyosaba kyosaba){
+        plugin=kyosaba;
     }
     @EventHandler
-    public void gate(PlayerMoveEvent event){
+    public void moveEvent(PlayerMoveEvent event){
 
     }
 }

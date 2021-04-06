@@ -9,7 +9,7 @@ public class Connect {
     String url;
     Kyosaba plugin;
     public Connect(KyosabaConfig kyosabaconfig, Kyosaba kyosaba){
-        Sqlconfigdata sqlconfigdata=kyosabaconfig.getSqlconfigdata();
+        SqlConfigData sqlconfigdata=kyosabaconfig.getSqlconfigdata();
         plugin=kyosaba;
         String host=sqlconfigdata.getHost();
         int port=sqlconfigdata.getPort();

@@ -3,3 +3,8 @@ version: ${project.version}
 main: net.kigawa.plugin.kyosaba.Kyosaba
 api-version: 1.16
 authors: [ kigawa ]
+commands:
+  portalCreate:
+    description: create portal
+    usage: /<command> <name>
+    permission: kyosaba.main.portal.createportal
