@@ -6,4 +6,5 @@ public interface DataSql {
     String[] getType();
     String[] getWhere();
     String[] getValue();
+    void setValue(String[] value);
 }

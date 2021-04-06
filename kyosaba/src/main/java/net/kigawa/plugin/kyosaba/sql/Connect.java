@@ -94,4 +94,45 @@ public class Connect {
         }
 
     }
+    public DataSql getDataSql(DataSql dataSql){
+        try {
+            Connection connection=DriverManager.getConnection(url);
+            Statement statement=connection.createStatement();
+
+            String[] where=dataSql.getWhere();
+            String table=dataSql.getTable();
+            String[] columns=dataSql.getColumns();
+
+            String column="";
+            String toColumn;
+            for(int i1=0;i1<columns.length;){
+                toColumn=column+columns[i1]+",";
+                column=toColumn;
+                i1++;
+            }
+            StringBuilder columnBuffer=new StringBuilder(column);
+            columnBuffer.setLength(columnBuffer.length()-1);
+            column=columnBuffer.toString();
+
+            String isData="SELECT "+column+" FROM "+table+" WHERE "+where[1]+"="+where[2];
+            ResultSet resultSet=statement.executeQuery(isData);
+            if(resultSet.next()){
+                String[] value=dataSql.getValue();
+                for (int i=0;i<columns.length;i++){
+                    value[i]=resultSet.getString(columns[i]);
+                }
+                dataSql.setValue(value);
+            }else {
+                plugin.getLogger().info("Can't get dataSql.");
+            }
+
+            resultSet.close();
+            statement.close();
+            connection.close();
+        }catch (Exception e){
+            plugin.getLogger().info(e.toString());
+        }
+
+        return dataSql;
+    }
 }
