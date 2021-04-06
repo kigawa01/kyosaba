@@ -4,16 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5d0f34b-5394-4b60-93b5-79c84b4a1fe2" name="Default Changelist" comment="sql config and connect method">
+    <list default="true" id="f5d0f34b-5394-4b60-93b5-79c84b4a1fe2" name="Default Changelist" comment="make setdata in connect and datasql">
+      <change afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/Datasql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/Kyosaba.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/Kyosaba.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/config/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/config/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/config/Mkconfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/config/Mkconfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/conect.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/conect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/conect.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/Conect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -120,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617632926222</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="remove unnecessary import">
+      <created>1617633216730</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617633216730</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -196,6 +210,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="dependency&#10;kyosaba and spigotmc" />
     <MESSAGE value="sql config and connect method" />
-    <option name="LAST_COMMIT_MESSAGE" value="sql config and connect method" />
+    <MESSAGE value="remove unnecessary import" />
+    <MESSAGE value="make setdata in connect and datasql" />
+    <option name="LAST_COMMIT_MESSAGE" value="make setdata in connect and datasql" />
   </component>
 </project>

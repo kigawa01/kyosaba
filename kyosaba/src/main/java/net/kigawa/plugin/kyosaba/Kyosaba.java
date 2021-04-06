@@ -14,7 +14,6 @@ public final class Kyosaba extends JavaPlugin {
         PluginManager pluginManager=getServer().getPluginManager();
         pluginManager.registerEvents(new listner(this),this);
         pluginManager.registerEvents(new portallistner(this),this);
-        new Kyosabaconfig(this);
     }
 
     @Override
