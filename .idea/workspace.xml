@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5d0f34b-5394-4b60-93b5-79c84b4a1fe2" name="Default Changelist" comment="make setdata in connect and datasql">
-      <change afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/Datasql.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/Kyosaba.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/Kyosaba.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/conect.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/Conect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/config/Kyosabaconfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/config/KyosabaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/config/Mkconfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/config/MkConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/main/chiar/listner.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/main/chiar/listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/main/portal/portallistner.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/main/portal/portalListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/Conect.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/Connect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/Sqlconfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/kyosaba/src/main/java/net/kigawa/plugin/kyosaba/sql/Sqlconfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617633216730</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="make setdata in connect and datasql">
+      <created>1617721111109</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617721111109</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

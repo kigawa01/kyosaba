@@ -5,9 +5,9 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
 
-public class portallistner implements Listener{
+public class portalListener implements Listener{
     private final Kyosaba plugin;
-    public portallistner(Kyosaba plg){
+    public portalListener(Kyosaba plg){
         plugin=plg;
     }
     @EventHandler

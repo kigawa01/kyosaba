@@ -14,28 +14,28 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 import org.spigotmc.event.entity.EntityDismountEvent;
 
-public class listner implements Listener {
+public class listener implements Listener {
     private final Kyosaba plugin;
-    public listner(Kyosaba kyosaba){
+    public listener(Kyosaba kyosaba){
         plugin=kyosaba;
     }
 
     @EventHandler
-    public void clickevent(PlayerInteractEvent event) {
+    public void clickEvent(PlayerInteractEvent event) {
         Player player = event.getPlayer();
         if (event.getClickedBlock() != null) {
             Block block = event.getClickedBlock();
             if (event.getPlayer().getInventory().getItemInMainHand().getAmount()==0) {
-                String sblock = block.toString();
-                Block upblock=block.getRelative(BlockFace.UP);
-                String strupblock=upblock.toString();
-                if (sblock.contains("STAIRS")&&sblock.contains("half=bottom")&&strupblock.contains("type=AIR")) {
+                String sBlock = block.toString();
+                Block upBlock=block.getRelative(BlockFace.UP);
+                String strUpBlock=upBlock.toString();
+                if (sBlock.contains("STAIRS")&&sBlock.contains("half=bottom")&&strUpBlock.contains("type=AIR")) {
                     event.setCancelled(true);
                     if (event.getPlayer().isGliding()) {
                         event.getPlayer().setGliding(false);
                     }
                     Arrow arrow = (Arrow) event.getPlayer().getWorld().spawnEntity(block.getLocation().add(new Vector(0.5, 0, 0.5)), EntityType.ARROW);
-                    arrow.addScoreboardTag("toride");
+                    arrow.addScoreboardTag("toRide");
                     arrow.setGravity(false);
                     arrow.setInvulnerable(true);
                     arrow.addPassenger(event.getPlayer());
@@ -45,9 +45,9 @@ public class listner implements Listener {
         }
     }
     @EventHandler
-    public void Getoffevent(EntityDismountEvent event){
+    public void GetOffEvent(EntityDismountEvent event){
         Entity mounted=event.getDismounted();
-        if(mounted.removeScoreboardTag("toride")){
+        if(mounted.removeScoreboardTag("toRide")){
             mounted.remove();
         }
     }

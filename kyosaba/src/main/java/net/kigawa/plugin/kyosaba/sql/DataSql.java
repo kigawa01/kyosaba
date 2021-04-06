@@ -1,7 +1,7 @@
 package net.kigawa.plugin.kyosaba.sql;
 
-public interface Datasql {
-    String[] getColamns();
+public interface DataSql {
+    String[] getColumns();
     String getTable();
     String[] getType();
     String[] getWhere();

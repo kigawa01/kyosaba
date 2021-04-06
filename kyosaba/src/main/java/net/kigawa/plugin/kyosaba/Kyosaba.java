@@ -1,8 +1,7 @@
 package net.kigawa.plugin.kyosaba;
 
-import net.kigawa.plugin.kyosaba.config.Kyosabaconfig;
-import net.kigawa.plugin.kyosaba.main.chiar.listner;
-import net.kigawa.plugin.kyosaba.main.portal.portallistner;
+import net.kigawa.plugin.kyosaba.main.chiar.listener;
+import net.kigawa.plugin.kyosaba.main.portal.portalListener;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -12,8 +11,8 @@ public final class Kyosaba extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         PluginManager pluginManager=getServer().getPluginManager();
-        pluginManager.registerEvents(new listner(this),this);
-        pluginManager.registerEvents(new portallistner(this),this);
+        pluginManager.registerEvents(new listener(this),this);
+        pluginManager.registerEvents(new portalListener(this),this);
     }
 
     @Override

@@ -1,14 +1,14 @@
 package net.kigawa.plugin.kyosaba.sql;
 
 import net.kigawa.plugin.kyosaba.Kyosaba;
-import net.kigawa.plugin.kyosaba.config.Kyosabaconfig;
+import net.kigawa.plugin.kyosaba.config.KyosabaConfig;
 
 import java.sql.*;
 
-public class Conect {
+public class Connect {
     String url;
     Kyosaba plugin;
-    public Conect(Kyosabaconfig kyosabaconfig, Kyosaba kyosaba){
+    public Connect(KyosabaConfig kyosabaconfig, Kyosaba kyosaba){
         Sqlconfigdata sqlconfigdata=kyosabaconfig.getSqlconfigdata();
         plugin=kyosaba;
         String host=sqlconfigdata.getHost();
@@ -19,29 +19,29 @@ public class Conect {
         String option= sqlconfigdata.getOption();
         url="jdbc:mysql://"+host+":"+port+"/"+database+"?user="+user+"&password="+password+option;
     }
-    public void setdata(Datasql datasql){
+    public void setData(DataSql datasql){
         try {
             Connection connection=DriverManager.getConnection(url);
             Statement statement=connection.createStatement();
             DatabaseMetaData databaseMetaData=connection.getMetaData();
 
             String table=datasql.getTable();
-            String[] columns=datasql.getColamns();
+            String[] columns=datasql.getColumns();
             String[] type=datasql.getType();
 
             ResultSet resultSetTb=databaseMetaData.getTables(null,null,table,null);
-            String createtablecolumn="";
+            String createTableColumn="";
             if(!resultSetTb.next()){
-                String tocreatetable;
+                String toCreateTable;
                 for(int i=0;i<columns.length;i++){
-                    tocreatetable=createtablecolumn+columns[i]+" "+type[i]+",";
-                    createtablecolumn=tocreatetable;
+                    toCreateTable=createTableColumn+columns[i]+" "+type[i]+",";
+                    createTableColumn=toCreateTable;
                 }
-                StringBuilder createTableColumn=new StringBuilder(createtablecolumn);
-                createTableColumn.setLength(createTableColumn.length()-1);
-                createtablecolumn=createTableColumn.toString();
-                String createtable="CREATE TABLE "+table+" ("+createtablecolumn+")";
-                statement.executeUpdate(createtable);
+                StringBuilder createTableColumnBuilder=new StringBuilder(createTableColumn);
+                createTableColumnBuilder.setLength(createTableColumnBuilder.length()-1);
+                createTableColumn=createTableColumnBuilder.toString();
+                String createTable="CREATE TABLE "+table+" ("+createTableColumn+")";
+                statement.executeUpdate(createTable);
             }
             resultSetTb.close();
 

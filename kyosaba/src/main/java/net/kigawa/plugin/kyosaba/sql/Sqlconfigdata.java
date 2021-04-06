@@ -29,7 +29,7 @@ public class Sqlconfigdata implements Data {
     public String getHost(){return host;}
     public void setHost(String string){host=string;}
     public int getPort(){return port;}
-    public void setPort(int intport){port=intport;}
+    public void setPort(int intPort){port=intPort;}
     public String getDatabase(){return database;}
     public void setDatabase(String string){database=string;}
     public String getUser(){return user;}
