@@ -14,9 +14,9 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 import org.spigotmc.event.entity.EntityDismountEvent;
 
-public class listener implements Listener {
+public class ChairListener implements org.bukkit.event.Listener {
     private final Kyosaba plugin;
-    public listener(Kyosaba kyosaba){
+    public ChairListener(Kyosaba kyosaba){
         plugin=kyosaba;
     }
 
