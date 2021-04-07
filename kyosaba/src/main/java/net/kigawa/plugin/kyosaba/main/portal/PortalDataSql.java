@@ -2,7 +2,7 @@ package net.kigawa.plugin.kyosaba.main.portal;
 
 import net.kigawa.plugin.kyosaba.sql.DataSql;
 
-public class portalDataSql implements DataSql {
+public class PortalDataSql implements DataSql {
     @Override
     public String[] getColumns() {
         return new String[0];
